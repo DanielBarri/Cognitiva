@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   useEffect(() => {
@@ -82,7 +83,7 @@ export default function Home() {
             <span className="logo-icon">🚀</span>
             <span>Cognitiva</span>
           </a>
-          <a href="#empezar" className="cta-button">¡Empezar Ahora!</a>
+          <Link href="/stories" className="cta-button">¡Empezar Ahora!</Link>
         </div>
       </header>
 
@@ -153,7 +154,7 @@ export default function Home() {
           </svg>
         </div>
 
-        <a href="#empezar" className="cta-button" style={{fontSize: '1.5rem', padding: '1.5rem 3rem'}}>¡Quiero Aprender! 🎉</a>
+        <Link href="/stories" className="cta-button" style={{fontSize: '1.5rem', padding: '1.5rem 3rem'}}>¡Quiero Aprender! 🎉</Link>
       </section>
 
       {/* Features Section */}
@@ -271,7 +272,7 @@ export default function Home() {
       <section className="cta-section" id="empezar">
         <h2>¡Es Hora de la Aventura! 🚀</h2>
         <p>Únete a miles de niños que ya están aprendiendo</p>
-        <a href="#" className="cta-large">¡Empezar Gratis Ahora! 🎉</a>
+        <Link href="/stories" className="cta-large">¡Empezar Gratis Ahora! 🎉</Link>
         <p style={{marginTop: '2rem', fontSize: '1.3rem'}}>✨ Sin tarjeta de crédito • Cancela cuando quieras ✨</p>
       </section>
 
